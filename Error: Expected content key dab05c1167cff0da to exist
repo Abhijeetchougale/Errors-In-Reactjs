@@ -1,0 +1,17 @@
+Error: Expected content key dab05c1167cff0da to exist
+      at nullthrows (E:\Akshay Saini React js\ReactProject\node_modules\nullthrows\nullthrows.js:7:15)
+      at AssetGraph.getNodeIdByContentKey (E:\Akshay Saini React js\ReactProject\node_modules\@parcel\graph\lib\ContentGraph.js:67:38)
+      at E:\Akshay Saini React js\ReactProject\node_modules\@parcel\core\lib\SymbolPropagation.js:52:82
+      at Array.map (<anonymous>)
+      at propagateSymbols (E:\Akshay Saini React js\ReactProject\node_modules\@parcel\core\lib\SymbolPropagation.js:52:61)
+      at AssetGraphBuilder.build (E:\Akshay Saini React js\ReactProject\node_modules\@parcel\core\lib\requests\AssetGraphRequest.js:174:62)
+      at async Object.run (E:\Akshay Saini React js\ReactProject\node_modules\@parcel\core\lib\requests\AssetGraphRequest.js:62:37)
+      at async RequestTracker.runRequest (E:\Akshay Saini React js\ReactProject\node_modules\@parcel\core\lib\RequestTracker.js:673:20)
+      at async Object.run (E:\Akshay Saini React js\ReactProject\node_modules\@parcel\core\lib\requests\BundleGraphRequest.js:106:11)
+      at async RequestTracker.runRequest (E:\Akshay Saini React js\ReactProject\node_modules\@parcel\core\lib\RequestTracker.js:673:20)
+
+
+Solution is
+Step 1. Stop the Server (ctrl + c)
+Step 2. Delete .parcel-cache folder
+Step 3. npx parcel index.html
